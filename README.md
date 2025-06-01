@@ -26,30 +26,35 @@
 
 `Приведите ответ в свободной форме........`
 
-1. ![Задание1](screens/p1.png)
-2. 
-Поле для вставки кода...
-`git clone https://github.com/netology-code/sys-pattern-homework`
-`mv sys-pattern-homework Zabbix1 && cd Zabbix1`
-`git remote remove origin`
-`git remote add origin git@github.com:boltunovag/Zabbix1.git`
-`git push -u origin main`
+1. ![Задание 1 п1](screens/p1.png)
+2. ![Задание 1 п2](screens/p5.png)
+# wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_6.0+debian11_all.deb
+# dpkg -i zabbix-release_latest_6.0+debian11_all.deb
+# apt update 
+# apt install zabbix-server-pgsql zabbix-frontend-php php7.4-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+# sudo -u postgres createuser --pwprompt zabbix
+# sudo -u postgres createdb -O zabbix zabbix
+# zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+# sed -i 's/# DBPassword=/DBPassword=123456789/g'  /etc/zabbix/zabbix_server.conf
+# systemctl restart zabbix-server zabbix-agent apache2
+# systemctl enable zabbix-server zabbix-agent apache2  
 ---
 
 ### Задание 2
 
 `Приведите ответ в свободной форме........`
 
-1. ![Задание П1](screens/p2.png)
-2. ![Задание2 П2](screens/p3.png)
-3. ![Задание2 П3](screens/p4.png)
-4. 
+1. ![Задание 2 п1](screens/p2.png)
+2. ![Задание 2 п2](screens/p3.png)
+3. ![Задание 2 п3](screens/p4.png)
+4. ![Задание 2 п4](screens/p6.png)
 Поле для вставки кода...
-`git add screens/p2.png`
-`git add screens/p3.png`
-`git add screens/p4.png`
-`git commit -m "Задание 2"`
-`git push origin main`
+`wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb`
+`sudo dpkg zabbix-release_6.0-4+debian11_all.deb`
+`sudo apt update`
+`sudo sed -i 's/ServerActive=127.0.0.1/ServerActive=192.168.56.101/g' /etc/zabbix/zabbix_agentd.conf`
+'sudo systemctl start zabbix-agent'
+'sudo systemctl enable zabbix-agent'
+
 ```
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+
