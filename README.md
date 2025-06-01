@@ -45,11 +45,11 @@
 3. ![Задание2 П3](screens/p4.png)
 4. 
 Поле для вставки кода...
-git add screens/p2.png
-git add screens/p3.png
-git add screens/p4.png
-git commit -m "Задание 2"
-git push origin main
+`git add screens/p2.png`
+`git add screens/p3.png`
+`git add screens/p4.png`
+`git commit -m "Задание 2"`
+`git push origin main`
 ```
 `При необходимости прикрепитe сюда скриншоты
 ![Название скриншота](ссылка на скриншот)`
